@@ -11,6 +11,8 @@
     src: url(../Font/Cocogoose-Pro-Ultralight.ttf);
 }
 
+@media screen and (min-width: 1024px){
+    
 .menu{
     margin: 0;
     padding: 0;
@@ -26,7 +28,7 @@
     align-items: baseline;
 
     
-}
+}}
 .top{
       margin: 0.5rem;
       width: 150px;
@@ -92,11 +94,10 @@
 
 }
 
-
+@media screen and (min-width: 1024px) {
 main{
     .container { 
         margin: 1rem;
-        margin-left: 3rem;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 0.5fr 0.1fr 0.5fr 0.1fr 0.5fr 0.1fr;
@@ -122,27 +123,27 @@ main{
       
       .imagen-2 { grid-area: imagen-2; }
       
-      .texto-1 { grid-area: texto-1; }
+      .imagen-texto-1 { grid-area: texto-1; }
       
-      .texto-2 { grid-area: texto-2; }
+      .imagen-texto-2 { grid-area: texto-2; }
       
       .imagen-3 { grid-area: imagen-3; }
       
       .imagen-4 { grid-area: imagen-4; }
       
-      .texto-3 { grid-area: texto-3; }
+      .imagen-texto-3 { grid-area: texto-3; }
       
-      .texto-4 { grid-area: texto-4; }
+      .imagen-texto-4 { grid-area: texto-4; }
       
       .imagen-5 { grid-area: imagen-5; }
       
       .imagen-6 { grid-area: imagen-6; }
       
-      .texto-5 { grid-area: texto-5; }
+      .imagen-texto-5 { grid-area: texto-5; }
       
-      .texto-6 { grid-area: texto-6; }
+      .imagen-texto-6 { grid-area: texto-6; }
       
-}
+}}
 
 .imagenesmenu{
     width: 550px;
@@ -156,14 +157,7 @@ footer{
         color: antiquewhite;
     }
 }
-.footer{
-    width: 1250px;
-    height: 1300;
-    background-color: rgb(0, 0, 0);
-    padding: 40px;
-    text-align: center;
 
-}
 .cajaMuestra{
     width: 200px;
     height: 200px;
@@ -171,44 +165,107 @@ footer{
     padding: 20px;
     margin: 20px;
 }
-.padre{
-    background-color: blueviolet;
-    width: 90vw;
-    height: 80vh;
-    border: rgb(255, 255, 255) 2px solid;
-    margin: 20px auto;
 
-    display:grid;
-    grid-template-columns: 2fr 1fr 2fr;
-    grid-auto-rows: 2fr 2fr 2%;
-    gap: 10px;
-    border: white;
-    
-}
-.hijo{
-    background-color: beige;
-    border: 2px rgb(150, 148, 148)
-
-    
-}
 
 @media screen and (max-width: 480px) {
-        .container { 
-            grid-template-columns:1fr;
-            grid-template-rows: 1fr 0.5fr 0.1fr 0.5fr 0.1fr 0.5fr 0.1fr 0.5fr 0.1fr 0.5fr 0.1fr;
-            grid-template-areas:
-              "Imagen-frase"
-              "imagen-1" 
-              "texto-1"
-              "imagen-2"
-              "texto-2"
-              "imagen-3" 
-              "texto-3"
-              "imagen-4"
-              "texto-4"
-              "imagen-5" 
-              "texto-5"
-              "imagen-6"
-              "texto-6";
-          }
+    .container { 
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 0.5fr 0.5fr 0.1fr 0.5fr 0.1fr 0.5fr 0.1fr 0.5fr 0.1fr 0.5fr 0.1fr 0.5fr;
+        gap: 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "Imagen-frase"
+          "imagen-1"
+          "imagen-texto-1"
+          "imagen-2"
+          "imagen-texto-2"
+          "imagen-3"
+          "imagen-texto-3"
+          "imagen-4"
+          "imagen-texto-4"
+          "imagen-5"
+          "imagen-texto-5"
+          "imagen-6"
+          "imagen-texto-6";
     }
+    .Imagen-frase { grid-area: Imagen-frase;
+    width: 700px;}
+      
+    .imagen-1 { grid-area: imagen-1;
+        width: 300px;
+     }
+    
+    .imagen-2 { grid-area: imagen-2; }
+    
+    .imagen-texto-1 { grid-area: texto-1; }
+    
+    .imagen-texto-2 { grid-area: texto-2; }
+    
+    .imagen-3 { grid-area: imagen-3; }
+    
+    .imagen-4 { grid-area: imagen-4; }
+    
+    .imagen-texto-3 { grid-area: texto-3; }
+    
+    .imagen-texto-4 { grid-area: texto-4; }
+    
+    .imagen-5 { grid-area: imagen-5; }
+    
+    .imagen-6 { grid-area: imagen-6; }
+    
+    .imagen-texto-5 { grid-area: texto-5; }
+    
+    .imagen-texto-6 { grid-area: texto-6; }
+      
+          }
+
+          @media screen and (max-width: 480px){
+    
+            .menu{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            
+                background-color: rgb(255, 255, 255);
+                width: 700px;
+                height: 50px;
+                padding: 0.3rem;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: baseline;
+            
+                
+            }}
+
+           
+                .imagenconoceme{
+                    width: 1340px;
+                }
+                
+            @media screen and (max-width: 480px){
+            .imagenconoceme{
+                width: 850px;
+            }
+            }
+            @media screen and (min-width: 1024px){
+            .footer{
+                width: 1250px;
+                height: 1300;
+                background-color: rgb(0, 0, 0);
+                padding: 40px;
+                text-align: center;
+            
+            }
+        }
+        @media screen and (max-width: 480px){
+            .footer{
+                width: 850px;
+                height: 1300;
+                background-color: rgb(0, 0, 0);
+                padding: 40px;
+                text-align: center;
+            
+            }
+        }
